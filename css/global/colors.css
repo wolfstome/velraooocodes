@@ -1,0 +1,20 @@
+/* css/colors.css */
+/* Shared brand palette; theme surfaces live in light.css and dark.css. */
+#velora-app { --purple:#6366f1; --pink:#ec4899; --accent:#6366f1; --brand-gradient:linear-gradient(135deg,#6366f1 0%,#ec4899 100%); }
+
+/* css/light.css */
+/* Default light palette. */
+#velora-app { --bg:#ffffff; --surface:#ffffff; --soft:#f1f5f9; --text:#0f172a; --muted:#334155; --line:#cbd5e1; --shadow:0 16px 40px #0f172a0d; --glass:rgba(255,255,255,.78); --hero-veil:rgba(255,255,255,.88); color-scheme:light; }
+
+/* css/dark.css */
+#velora-app[data-theme="dark"] { --bg:#0f172a; --surface:#1e293b; --soft:#1e293b; --text:#ffffff; --muted:#94a3b8; --line:#334155; --accent:#6366f1; --purple:#6366f1; --pink:#ec4899; --shadow:0 16px 40px #0002; --glass:rgba(15,23,42,.78); --hero-veil:rgba(15,23,42,.84); color-scheme:dark; }
+#velora-app[data-theme="dark"] .vc-hero-art { background:#382e47; color:#c2adcf; }
+#velora-app[data-theme="dark"] .vc-hero-art::before { opacity:.1; }
+#velora-app[data-theme="dark"] .vc-lavender { background:#3b3248; color:#ae96c6; }
+#velora-app[data-theme="dark"] .vc-peach { background:#443730; color:#c5a084; }
+#velora-app[data-theme="dark"] .vc-sage, #velora-app[data-theme="dark"] .vc-placeholder-about { background:#323d33; color:#a2b698; }
+#velora-app[data-theme="dark"] .vc-blue { background:#2f3a46; color:#8ca9c2; }
+#velora-app[data-theme="dark"] .vc-contact { background:#392e47; color:#f3e8fb; }
+#velora-app[data-theme="dark"] .vc-contact h2 > span:first-child, #velora-app[data-theme="dark"] .vc-contact p:not(.vc-eyebrow) { color:#bfabd0; }
+#velora-app[data-theme="dark"] .vc-contact-watermark { color:#483958; }
+

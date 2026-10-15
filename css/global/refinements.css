@@ -1,0 +1,573 @@
+/* css/responsive.css */
+@media (min-width:1500px) { #velora-app .vc-wrap { width:1240px; } }
+@media (max-width:1050px) {
+  #velora-app .vc-wrap { width:calc(100% - 64px); }
+  #velora-app .vc-nav { gap:20px; }
+  #velora-app #navigation { gap:22px; }
+  #velora-app .vc-nav-actions { gap:12px; }
+  #velora-app .vc-hero { gap:40px; }
+  #velora-app h1 { font-size:57px; letter-spacing:-3px; }
+  #velora-app .vc-hero-art { height:455px; }
+  #velora-app .vc-image-frame { inset:80px 35px 65px; }
+  #velora-app .vc-floating { padding:11px; font-size:10px; }
+  #velora-app .vc-services { grid-template-columns:1fr 1fr; }
+  #velora-app .vc-service:nth-child(3) { border-left:0; }
+  #velora-app .vc-service:nth-child(n+3) { border-top:1px solid var(--line); }
+  #velora-app .vc-about { gap:60px; }
+  #velora-app .vc-project-caption { align-items:flex-start; flex-direction:column; gap:6px; }
+  #velora-app .vc-footer-top > p { margin-left:10px; }
+}
+@media (max-width:760px) {
+  #velora-app .vc-wrap { width:calc(100% - 40px); }
+  #velora-app .vc-nav { height:78px; gap:12px; }
+  #velora-app .vc-brand { font-size:22px; }
+  #velora-app .vc-mark { font-size:35px; margin-right:9px; }
+  #velora-app .vc-mark span { font-size:17px; top:-12px; }
+  #velora-app .vc-nav-actions > .vc-button { display:none; }
+  #velora-app .vc-menu { display:block; background:transparent; color:var(--text); border:0; width:35px; font-size:23px; }
+  #velora-app #navigation { display:none; position:absolute; top:77px; left:0; right:0; padding:22px; border-bottom:1px solid var(--line); background:var(--surface); box-shadow:var(--shadow); }
+  #velora-app #navigation.vc-is-open { display:flex; flex-direction:column; }
+  #velora-app .vc-hero { grid-template-columns:1fr; padding-block:48px 40px; gap:45px; }
+  #velora-app h1 { font-size:clamp(47px,10vw,69px); line-height:1.07; letter-spacing:-3px; }
+  #velora-app .vc-eyebrow { font-size:8px; letter-spacing:1.5px; margin-bottom:20px; }
+  #velora-app .vc-spark { font-size:29px; margin-left:7px; }
+  #velora-app .vc-intro { font-size:13px; max-width:360px; }
+  #velora-app .vc-hero .vc-actions { gap:18px; margin-top:25px; }
+  #velora-app .vc-button { padding:15px 20px; font-size:12px; gap:20px; }
+  #velora-app .vc-text-link { font-size:11px; gap:10px; }
+  #velora-app .vc-hero-note { margin-top:27px; }
+  #velora-app .vc-hero-art { height:400px; margin-inline:9px; }
+  #velora-app .vc-image-frame { inset:65px 45px 65px; }
+  #velora-app .vc-image-frame > span:nth-child(2) { font-size:30px; }
+  #velora-app .vc-float-top { left:-12px; top:78px; }
+  #velora-app .vc-float-bottom { right:-12px; bottom:55px; }
+  #velora-app .vc-art-star { font-size:65px; }
+  #velora-app .vc-partners { flex-direction:column; gap:15px; align-items:stretch; padding-bottom:28px; }
+  #velora-app .vc-partners > p { text-align:center; font-size:8px; }
+  #velora-app .vc-partners > p br { display:none; }
+  #velora-app .vc-marquee-track > div { gap:40px; padding:15px 20px; }
+  #velora-app .vc-marquee-track span { font-size:18px; }
+  #velora-app .vc-placeholder-note { bottom:6px; }
+  #velora-app .vc-section { padding-block:62px; }
+  #velora-app .vc-section-heading { flex-direction:column; align-items:flex-start; gap:20px; margin-bottom:30px; }
+  #velora-app h2 { font-size:35px; letter-spacing:-1.7px; }
+  #velora-app .vc-section-heading > p { font-size:12px; }
+  #velora-app .vc-service { padding:22px 18px 55px; }
+  #velora-app .vc-service-top { margin-bottom:24px; }
+  #velora-app .vc-service h3 { font-size:18px; }
+  #velora-app .vc-service p { font-size:11px; }
+  #velora-app .vc-service small { font-size:8px; }
+  #velora-app .vc-about-band { padding-block:50px; }
+  #velora-app .vc-about { grid-template-columns:1fr; gap:50px; }
+  #velora-app .vc-about-art { margin-right:15px; }
+  #velora-app .vc-studio-sticker { right:-15px; }
+  #velora-app .vc-projects { gap:28px; grid-template-columns:1fr; }
+  #velora-app .vc-project-art { height:290px; }
+  #velora-app .vc-project-caption { flex-direction:row; align-items:center; }
+  #velora-app .vc-project-caption h3 { font-size:16px; }
+  #velora-app .vc-project-caption > span { font-size:9px; }
+  #velora-app .vc-filter-bar { gap:7px; }
+  #velora-app .vc-filter-bar button { padding:8px 13px; font-size:10px; }
+  #velora-app .vc-process { grid-template-columns:1fr 1fr; gap:30px 25px; }
+  #velora-app .vc-process h3 { font-size:19px; }
+  #velora-app .vc-quote { padding-block:60px; }
+  #velora-app .vc-quote h2 { font-size:31px; }
+  #velora-app .vc-insights { grid-template-columns:1fr; gap:35px; }
+  #velora-app .vc-article-art { height:245px; }
+  #velora-app .vc-article h3 a { width:100%; }
+  #velora-app .vc-contact { padding:40px 25px 68px; }
+  #velora-app .vc-contact h2 { font-size:39px; letter-spacing:-2px; }
+  #velora-app .vc-contact-star { font-size:30px; margin-left:8px; }
+  #velora-app .vc-contact-watermark { font-size:220px; right:10px; bottom:-50px; opacity:.5; }
+  #velora-app .vc-contact-footnote { left:25px; font-size:6px; letter-spacing:1px; }
+  #velora-app .vc-footer { padding-top:40px; }
+  #velora-app .vc-footer-top { flex-wrap:wrap; padding-bottom:30px; gap:20px; }
+  #velora-app .vc-footer-top > p { margin:0; flex-basis:100%; order:3; }
+  #velora-app .vc-footer-top > .vc-text-link { margin-left:auto; }
+  #velora-app .vc-footer-bottom { flex-wrap:wrap; gap:8px; font-size:8px; }
+  #velora-app .vc-footer-location { display:none; }
+  #velora-app .vc-dialog { padding:35px 25px; }
+  #velora-app .vc-dialog h2 { font-size:30px; }
+}
+@media (prefers-reduced-motion:reduce) { #velora-app *, #velora-app *::before, #velora-app *::after { animation:none!important; transition:none!important; } }
+
+/* css/navigation.css */
+/* Floating glass navigation and the mobile semicircle reveal. */
+#velora-app { padding-top:100px; }
+#velora-app .vc-header { position:fixed; inset:14px 0 auto; z-index:50; border:0; pointer-events:none; }
+#velora-app .vc-nav { position:relative; width:min(1240px,calc(100% - 40px)); height:76px; padding:0 25px; border:1px solid color-mix(in srgb,var(--line),transparent 35%); border-radius:999px; background:var(--glass); backdrop-filter:blur(22px); -webkit-backdrop-filter:blur(22px); box-shadow:0 8px 32px #0f172a12; pointer-events:auto; gap:20px; }
+#velora-app #navigation { gap:22px; }
+#velora-app #navigation > a { transition:color .2s; }
+#velora-app .vc-nav-actions { gap:13px; }
+#velora-app .vc-menu-caption,#velora-app .vc-menu-footer { display:none; }
+#velora-app .vc-menu { position:relative; width:44px; height:44px; border:1px solid var(--line); border-radius:50%; padding:0; background:transparent; color:var(--text); transition:transform .65s cubic-bezier(.22,1,.36,1); }
+#velora-app .vc-menu > span { position:absolute; top:21px; left:12px; width:18px; height:2px; background:currentColor; border-radius:4px; transition:translate .35s,rotate .35s,opacity .2s; }
+#velora-app .vc-menu > span:first-child { translate:0 -6px; }
+#velora-app .vc-menu > span:last-child { translate:0 6px; }
+#velora-app .vc-menu[aria-expanded="true"] > span:first-child { translate:0; rotate:45deg; }
+#velora-app .vc-menu[aria-expanded="true"] > span:nth-child(2) { opacity:0; }
+#velora-app .vc-menu[aria-expanded="true"] > span:last-child { translate:0; rotate:-45deg; }
+#velora-app.vc-menu-open { overflow:hidden; }
+#velora-app .vc-section,#velora-app #about { scroll-margin-top:110px; }
+#velora-app #main { scroll-margin-top:100px; }
+#velora-app .vc-button { background:var(--brand-gradient); color:white; box-shadow:0 8px 25px #6366f125; }
+#velora-app .vc-button:hover { background:var(--brand-gradient); color:#fff; box-shadow:0 12px 30px #ec489940; }
+#velora-app .vc-button-light { background:#fff; color:#6366f1; }
+#velora-app .vc-gradient { background-image:var(--brand-gradient); }
+@media(max-width:1100px) and (min-width:901px){#velora-app #navigation{gap:15px;font-size:12px;}#velora-app .vc-nav{padding-inline:18px;}#velora-app .vc-nav-actions>.vc-button{display:none;}}
+@media(max-width:900px){
+  #velora-app { padding-top:88px; }
+  #velora-app .vc-header { top:10px; }
+  #velora-app .vc-nav { width:calc(100% - 24px);height:66px;padding:0 16px; }
+  #velora-app .vc-brand { font-size:23px; }
+  #velora-app .vc-menu { display:block; }
+  #velora-app .vc-nav-actions>.vc-button { display:none; }
+  #velora-app .vc-nav { backdrop-filter:none; -webkit-backdrop-filter:none; background:transparent; isolation:isolate; }
+  #velora-app .vc-nav::before { content:'';position:absolute;inset:0;z-index:-1;border-radius:999px;background:var(--glass);backdrop-filter:blur(22px);-webkit-backdrop-filter:blur(22px); }
+  #velora-app #navigation { display:flex;position:fixed;inset:90px 12px 12px;max-height:calc(100dvh - 102px);overflow-y:auto;overscroll-behavior:contain;flex-direction:column;align-items:stretch;justify-content:flex-start;gap:0;padding:30px clamp(24px,7vw,70px);background:var(--surface);background-image:radial-gradient(ellipse at 100% 100%,#6366f12e,transparent 65%);border:1px solid var(--line);border-radius:32px;box-shadow:0 20px 70px #0003;clip-path:ellipse(0% 0% at 100% 100%);visibility:hidden;pointer-events:none;transition:clip-path .65s cubic-bezier(.22,1,.36,1),visibility .65s; }
+  #velora-app #navigation.vc-is-open { clip-path:ellipse(150% 150% at 100% 100%);visibility:visible;pointer-events:auto; }
+  #velora-app #navigation>a { flex-shrink:0;display:flex;align-items:center;justify-content:space-between;font-size:clamp(28px,6vw,48px);letter-spacing:-1.5px;line-height:1.2;padding:15px 0;border-bottom:1px solid var(--line);opacity:0;translate:0 35px;transition:opacity .4s,translate .5s; }
+  #velora-app #navigation>a::after { content:'↗';font-size:.6em;color:var(--purple); }
+  #velora-app #navigation.vc-is-open>a { opacity:1;translate:0;transition-delay:calc(100ms + var(--link-order)*65ms); }
+  #velora-app .vc-menu-caption { display:block;font-size:9px;letter-spacing:2px;color:var(--muted);margin-bottom:12px; }
+  #velora-app .vc-menu-footer { display:block;font-size:11px;color:var(--muted);margin-top:auto;padding-top:24px; }
+}
+@media(prefers-reduced-motion:reduce){#velora-app #navigation,#velora-app #navigation>a,#velora-app .vc-menu,#velora-app .vc-menu>span{transition:none;}}
+
+/* css/animation.css */
+/* Reference colors, count-up metrics, scroll reveals, and the studio story. */
+#velora-app h1,#velora-app h2 { font-weight:700; }
+#velora-app .vc-hero { background:radial-gradient(ellipse at 10% 35%,#6366f10a,transparent 65%); }
+#velora-app .vc-hero-art { background:linear-gradient(135deg,#6366f125,#ec489925); color:var(--accent); }
+#velora-app[data-theme="dark"] .vc-hero-art { background:linear-gradient(135deg,#6366f12e,#ec48992e);color:#c7d2fe; }
+#velora-app .vc-art-star { color:var(--purple); }
+#velora-app .vc-contact,#velora-app[data-theme="dark"] .vc-contact { background:var(--brand-gradient);color:#fff; }
+#velora-app .vc-contact h2>span:first-child,#velora-app .vc-contact p:not(.vc-eyebrow),#velora-app[data-theme="dark"] .vc-contact h2>span:first-child,#velora-app[data-theme="dark"] .vc-contact p:not(.vc-eyebrow) { color:#fff; }
+#velora-app .vc-contact-watermark,#velora-app[data-theme="dark"] .vc-contact-watermark { color:#ffffff17; }
+#velora-app .vc-lavender,#velora-app .vc-blue { background:#e0e7ff;color:#6366f1; }
+#velora-app .vc-peach,#velora-app .vc-sage { background:#fce7f3;color:#db2777; }
+#velora-app[data-theme="dark"] .vc-lavender,#velora-app[data-theme="dark"] .vc-blue { background:#262f53;color:#a5b4fc; }
+#velora-app[data-theme="dark"] .vc-peach,#velora-app[data-theme="dark"] .vc-sage { background:#42253e;color:#f9a8d4; }
+#velora-app .vc-stats { display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-top:35px;max-width:450px; }
+#velora-app .vc-stats>div { display:flex;flex-direction:column; }
+#velora-app .vc-stats strong { font-size:35px;letter-spacing:-1.5px;line-height:1.2;background:var(--brand-gradient);background-clip:text;color:transparent;font-variant-numeric:tabular-nums; }
+#velora-app .vc-stats>div>span { font-size:11px;color:var(--muted);margin-top:7px; }
+#velora-app .vc-stats-note { grid-column:1/-1;font-size:7px;letter-spacing:1px;color:var(--muted); }
+#velora-app .vc-partners { flex-direction:row;align-items:center;gap:28px; }
+#velora-app .vc-partners>p { flex:0 0 150px;text-align:left;font-size:9px;line-height:1.8;letter-spacing:1.5px; }
+#velora-app .vc-partners>p small { display:block;font-size:6px;letter-spacing:1px;opacity:.7; }
+#velora-app .vc-partners .vc-marquee { min-width:0; border-radius:22px; }
+#velora-app .vc-reveal { opacity:0;translate:0 40px;transition:opacity .75s var(--reveal-delay,0ms),translate .75s cubic-bezier(.22,1,.36,1) var(--reveal-delay,0ms); }
+#velora-app .vc-reveal.vc-in-view { opacity:1;translate:0; }
+#velora-app .vc-service { background:var(--surface); }
+#velora-app .vc-service:hover { background:color-mix(in srgb,var(--surface),var(--purple) 6%); }
+#velora-app .vc-service-icon { background:var(--brand-gradient);color:#fff;transition:rotate .4s; }
+#velora-app .vc-service:hover .vc-service-icon { rotate:-12deg; }
+#velora-app .vc-service-controls { display:none; }
+#velora-app #process-list article { padding:25px;border:1px solid var(--line);border-radius:18px;background:var(--bg); }
+#velora-app #process-list .vc-step-number { border:0;padding:0;font-size:28px;margin-bottom:24px; }
+#velora-app #process-list h3 { font-weight:600; }
+#velora-app .vc-studio-section { background:var(--soft);overflow:clip;padding-bottom:95px; }
+#velora-app .vc-studio-strip { display:flex;width:max-content;gap:35px;border-block:1px solid var(--line);padding:25px 0;margin-bottom:85px;font-size:clamp(30px,4vw,60px);font-weight:700;letter-spacing:-2px;color:var(--purple);animation:vc-marquee 35s linear infinite; }
+#velora-app .vc-studio-strip span { white-space:nowrap; }
+#velora-app .vc-studio-layout { display:grid;grid-template-columns:1fr 1fr;gap:90px;align-items:start; }
+#velora-app .vc-studio-pin { position:sticky;top:125px; }
+#velora-app .vc-studio-orbit { position:relative;display:grid;place-items:center;height:290px;margin:30px 0 10px;background:radial-gradient(ellipse,#6366f126,transparent 67%); }
+#velora-app .vc-orbit-ring { position:absolute;width:245px;height:245px;border:1px solid var(--purple);border-radius:50%;animation:vc-turn 25s linear infinite; }
+#velora-app .vc-orbit-ring::before { content:'';position:absolute;top:32px;left:25px;width:20px;height:20px;background:var(--brand-gradient);border-radius:50%;box-shadow:0 0 30px #6366f150; }
+#velora-app .vc-orbit-ring::after { content:'';position:absolute;inset:25px;border:1px dashed var(--line);border-radius:50%; }
+#velora-app .vc-orbit-star { font-size:125px;line-height:1;background:var(--brand-gradient);background-clip:text;color:transparent;animation:vc-turn 35s linear infinite reverse; }
+#velora-app .vc-studio-image-label { position:absolute;bottom:6px;font-size:8px;letter-spacing:2px;color:var(--muted); }
+#velora-app .vc-orbit-badge { position:absolute;right:0;bottom:55px;background:var(--surface);border:1px solid var(--line);padding:12px 20px;border-radius:50px;rotate:-8deg;font-size:12px; }
+#velora-app .vc-studio-chapters { display:grid;gap:50px; }
+#velora-app .vc-studio-chapters article { min-height:340px;border-top:1px solid var(--line);padding:35px 0; }
+#velora-app .vc-chapter-number { font-size:10px;letter-spacing:2px;color:var(--accent); }
+#velora-app .vc-studio-chapters h3 { font-size:clamp(30px,3.5vw,44px);font-weight:600;letter-spacing:-1.5px;margin:25px 0; }
+#velora-app .vc-studio-chapters h3 em { font-family:var(--font-editorial);font-weight:400;color:var(--pink); }
+#velora-app .vc-studio-chapters p { max-width:390px;font-size:14px;color:var(--muted); }
+#velora-app .vc-chapter-tag { display:inline-block;font-size:9px;letter-spacing:1px;border:1px solid var(--line);border-radius:50px;padding:8px 15px;margin-top:25px; }
+@media(max-width:760px){
+  #velora-app .vc-hero { position:relative;isolation:isolate;display:block;overflow:hidden;border-radius:26px;padding:45px 22px;margin-top:15px;width:calc(100% - 24px); }
+  #velora-app .vc-hero-copy { position:relative;z-index:2; }
+  #velora-app .vc-hero-art { position:absolute;inset:0;width:100%;height:100%;margin:0;border-radius:26px;z-index:-2;pointer-events:none; }
+  #velora-app .vc-hero::after { content:'';position:absolute;inset:0;z-index:-1;background:linear-gradient(110deg,var(--hero-veil) 10%,color-mix(in srgb,var(--bg),transparent 26%) 65%,transparent 100%); }
+  #velora-app .vc-hero-art .vc-image-frame { inset:8% -18% 6% 35%;border-radius:200px 200px 20px 20px;rotate:-12deg;border-color:#6366f150;background:linear-gradient(135deg,#6366f135,#ec489930); }
+  #velora-app .vc-hero-art .vc-art-top,#velora-app .vc-hero-art .vc-art-bottom,#velora-app .vc-hero-art .vc-floating,#velora-app .vc-hero-art .vc-image-frame>* { visibility:hidden; }
+  #velora-app .vc-hero-art .vc-art-star { right:15px;top:42%;font-size:130px;opacity:.22; }
+  #velora-app .vc-hero h1 { font-size:clamp(41px,8vw,63px);letter-spacing:-2.5px; }
+  #velora-app .vc-hero .vc-intro { max-width:390px;color:var(--muted); }
+  #velora-app .vc-stats { gap:10px;margin-top:30px; }
+  #velora-app .vc-stats strong { font-size:32px; }
+  #velora-app .vc-stats>div>span { font-size:9px; }
+  #velora-app .vc-partners { gap:14px;margin-top:28px; }
+  #velora-app .vc-partners>p { flex:0 0 90px;font-size:7px;letter-spacing:1px;text-align:left; }
+  #velora-app .vc-partners>p br { display:initial; }
+  #velora-app .vc-partners .vc-marquee { flex:1; }
+  #velora-app .vc-partners .vc-placeholder-note { display:none; }
+  #velora-app .vc-services { display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scroll-padding:1px;overscroll-behavior-x:contain;gap:16px;border:0;border-radius:0;padding:0 0 14px;scrollbar-width:thin;scrollbar-color:var(--purple) var(--soft); }
+  #velora-app .vc-service { flex:0 0 85%;scroll-snap-align:start;border:1px solid var(--line)!important;border-radius:20px;padding:27px 25px 65px;min-height:315px; }
+  #velora-app .vc-service h3 { font-size:24px; }
+  #velora-app .vc-service p { font-size:14px; }
+  #velora-app .vc-service small { font-size:10px; }
+  #velora-app .vc-service-controls { display:flex;align-items:center;justify-content:space-between;margin-top:8px;font-size:8px;letter-spacing:1.5px;color:var(--muted); }
+  #velora-app .vc-service-controls>div { display:flex;gap:8px; }
+  #velora-app .vc-service-controls button { border:1px solid var(--line);border-radius:50%;width:37px;height:37px;background:var(--surface);color:var(--text);font-size:19px; }
+  #velora-app .vc-studio-section { padding-bottom:60px; }
+  #velora-app .vc-studio-strip { margin-bottom:45px;padding-block:18px; }
+  #velora-app .vc-studio-layout { grid-template-columns:1fr;gap:30px; }
+  #velora-app .vc-studio-pin { position:relative;top:auto; }
+  #velora-app .vc-studio-orbit { height:235px; }
+  #velora-app .vc-orbit-ring { width:200px;height:200px; }
+  #velora-app .vc-studio-chapters { gap:15px; }
+  #velora-app .vc-studio-chapters article { min-height:0;padding:30px 24px;border:1px solid var(--line);border-radius:22px;background:var(--bg); }
+  #velora-app #process-list { grid-template-columns:1fr;gap:18px; }
+  #velora-app #process-list article { padding:27px; }
+  #velora-app #process-list p { max-width:none;font-size:13px; }
+  #velora-app .vc-reveal { transition-delay:0ms; }
+}
+@media(prefers-reduced-motion:reduce){#velora-app .vc-reveal{opacity:1;translate:0;transition:none;}#velora-app .vc-studio-strip,#velora-app .vc-orbit-ring,#velora-app .vc-orbit-star{animation:none;}}
+
+/* css/footer.css */
+/* Four-column footer, newsletter row, and policy bar from the reference layout. */
+#velora-app .vc-footer { margin-top:90px;padding:75px 0 0;background:var(--soft);border-top:1px solid var(--line); }
+#velora-app .vc-footer-grid { display:grid;grid-template-columns:1.7fr 1fr 1.1fr 1.3fr;gap:48px;padding-bottom:60px; }
+#velora-app .vc-footer-grid h3 { font-size:16px;font-weight:600;margin-bottom:25px;letter-spacing:0; }
+#velora-app .vc-footer-grid>div>a:not(.vc-brand),#velora-app .vc-footer-place { display:block;font-size:13px;color:var(--muted);margin:12px 0; }
+#velora-app .vc-footer-grid>div>a:not(.vc-brand):hover { color:var(--purple); }
+#velora-app .vc-footer-brand>p { color:var(--muted);font-size:13px;line-height:1.9;margin:20px 0;max-width:310px; }
+#velora-app .vc-socials { display:flex;gap:10px; }
+#velora-app .vc-socials button { display:grid;place-items:center;width:36px;height:36px;border:1px solid var(--line);border-radius:50%;color:var(--muted);background:var(--bg);font-size:14px;transition:background .2s,transform .2s; }
+#velora-app .vc-socials button:hover { color:#fff;background:var(--brand-gradient);transform:translateY(-4px); }
+#velora-app .vc-footer-grid small { font-size:9px;color:var(--muted); }
+#velora-app .vc-newsletter { display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center;border-block:1px solid var(--line);padding:38px 0; }
+#velora-app .vc-newsletter h3 { font-size:22px;margin-bottom:10px; }
+#velora-app .vc-newsletter p { font-size:12px;color:var(--muted); }
+#velora-app #newsletter-form>div { display:flex;padding:6px;border:1px solid var(--line);border-radius:50px;background:var(--bg); }
+#velora-app #newsletter-email { width:100%;min-width:0;background:transparent;border:0;border-radius:50px;padding:10px 18px;color:var(--text);font-size:12px; }
+#velora-app #newsletter-form small { display:block;font-size:8px;color:var(--muted);margin-top:8px;padding-left:20px; }
+#velora-app #newsletter-status { padding:8px 15px 0;font-size:11px; }
+#velora-app .vc-footer-bottom { display:flex;align-items:center;justify-content:space-between;padding:25px 0;border:0;gap:20px;font-size:11px; }
+#velora-app .vc-footer-bottom>div { display:flex;flex-wrap:wrap;gap:20px; }
+#velora-app .vc-footer-bottom button { border:0;background:transparent;padding:0;color:var(--muted);font-size:11px; }
+#velora-app .vc-footer-bottom>a { display:inline-flex;align-items:center;gap:10px;width:auto;height:auto;background:none;border-radius:0;color:var(--muted);font-size:12px;white-space:nowrap; }
+#velora-app .vc-sr-only { position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0; }
+@media(max-width:1050px){#velora-app .vc-footer-grid{gap:30px;grid-template-columns:1.4fr 1fr 1fr;}#velora-app .vc-footer-grid>div:last-child{grid-column:1/-1;display:flex;align-items:center;flex-wrap:wrap;gap:20px;}#velora-app .vc-footer-grid>div:last-child h3{margin:0;}}
+@media(max-width:760px){
+  #velora-app .vc-footer { margin-top:55px;padding-top:50px; }
+  #velora-app .vc-footer-grid { grid-template-columns:1fr 1fr;gap:35px 25px;padding-bottom:35px; }
+  #velora-app .vc-footer-brand { grid-column:1/-1; }
+  #velora-app .vc-footer-brand>p { max-width:450px; }
+  #velora-app .vc-footer-grid>div:last-child { display:block; }
+  #velora-app .vc-footer-grid>div:last-child h3 { margin-bottom:20px; }
+  #velora-app .vc-footer-grid h3 { margin-bottom:17px; }
+  #velora-app .vc-newsletter { grid-template-columns:1fr;gap:20px;padding:30px 0; }
+  #velora-app #newsletter-form .vc-button { gap:12px;padding:13px 17px; }
+  #velora-app .vc-footer-bottom { flex-wrap:wrap;font-size:10px; }
+  #velora-app .vc-footer-bottom>span { flex-basis:100%; }
+  #velora-app .vc-footer-bottom>div { gap:15px; }
+  #velora-app .vc-footer-bottom button { font-size:10px; }
+}
+
+/* Focused refinements: retain the original identity, remove repetitive boxes. */
+#velora-app [hidden]{display:none!important}
+#velora-app .vc-editorial-image{width:100%;height:100%;object-fit:cover;display:block}
+#velora-app .vc-hero-art{padding:0;overflow:hidden}
+#velora-app .vc-hero-art .vc-art-top,#velora-app .vc-hero-art .vc-art-bottom{position:absolute;left:24px;right:24px;color:white;text-shadow:0 1px 8px #000;z-index:1}
+#velora-app .vc-hero-art .vc-art-top{top:24px}
+#velora-app .vc-hero-art:after{content:'';position:absolute;inset:0;background:linear-gradient(#0f172a50,transparent 30%,transparent 70%,#0f172a70);pointer-events:none}
+#velora-app .vc-stats:empty{display:none}
+#velora-app .vc-studio-orbit{height:340px;border-radius:16px;overflow:hidden;background:none}
+#velora-app .vc-studio-orbit img{object-position:center 75%}
+#velora-app .vc-services{display:block;border:0;border-radius:0;overflow:visible}
+#velora-app .vc-service{display:grid;grid-template-columns:100px 1fr 1.2fr;column-gap:30px;align-items:center;padding:30px 55px 30px 0;min-height:145px;border:0!important;border-top:1px solid var(--line)!important;border-radius:0;background:none}
+#velora-app .vc-service:last-child{border-bottom:1px solid var(--line)!important}
+#velora-app .vc-service-top{margin:0;justify-content:flex-start;gap:20px;grid-row:1/3}
+#velora-app .vc-service-icon{background:none!important;color:var(--accent)!important;width:35px;height:35px;border-radius:0}
+#velora-app .vc-service h3{font-size:28px;grid-row:1/3}
+#velora-app .vc-service p{font-size:13px;margin:0;max-width:370px}
+#velora-app .vc-service small{margin-top:10px;grid-column:3}
+#velora-app .vc-service>button{top:40%;bottom:auto;right:3px;transition:transform .3s}
+#velora-app .vc-service:hover{background:none}
+#velora-app .vc-service:hover>button{transform:translate(3px,-3px)}
+#velora-app .vc-projects{gap:55px 35px;align-items:start}
+#velora-app .vc-project:nth-child(even){margin-top:80px}
+#velora-app .vc-project-art{height:auto;aspect-ratio:1.12;border-radius:10px}
+#velora-app .vc-project-art img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0;transition:transform .85s cubic-bezier(.2,.8,.2,1)}
+#velora-app .vc-project-art:hover img{transform:scale(1.045)}
+#velora-app .vc-project-tag{z-index:1;background:#ffffffdf;color:#0f172a;border:0;padding:7px 12px}
+#velora-app .vc-project-arrow{z-index:1;background:#ffffffeb}
+#velora-app .vc-project-caption{align-items:start}
+#velora-app .vc-dialog-art{overflow:hidden;padding:0}
+#velora-app .vc-dialog-art img{width:100%;height:100%;max-height:560px;object-fit:cover}
+#velora-app #process-list article{border:0;border-top:1px solid var(--line);border-radius:0;background:none;padding:28px 0}
+#velora-app #process-list .vc-step-number{color:var(--accent);font-family:Georgia,serif;font-style:italic;font-size:40px}
+#velora-app .vc-insights{display:block}
+#velora-app .vc-article{display:grid;grid-template-columns:210px 1fr;column-gap:38px;border-top:1px solid var(--line);padding:25px 0;align-items:center}
+#velora-app .vc-article:last-child{border-bottom:1px solid var(--line)}
+#velora-app .vc-article-art{grid-row:1/3;height:145px;border-radius:8px;overflow:hidden}
+#velora-app .vc-article-art img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+#velora-app .vc-article:hover img{transform:scale(1.04)}
+#velora-app .vc-article-meta{align-self:end;margin:0 0 12px}
+#velora-app .vc-article h3{align-self:start}
+#velora-app .vc-article h3 a{font-size:29px}
+#velora-app .vc-studio-chapters article{background:none;border-radius:0}
+#velora-app .vc-newsletter>.vc-button{flex-shrink:0}
+#velora-app .vc-review-controls{display:flex;justify-content:center;align-items:center;gap:20px;margin-top:25px}
+#velora-app .vc-review-controls button{width:40px;height:40px;border:1px solid var(--line);background:var(--surface);border-radius:50%;color:var(--text)}
+@media(max-width:760px){
+ #velora-app .vc-hero-art .vc-editorial-image{visibility:visible;object-position:60% center}
+ #velora-app .vc-hero::after{background:linear-gradient(95deg,var(--hero-veil) 10%,color-mix(in srgb,var(--bg),transparent 18%) 65%,color-mix(in srgb,var(--bg),transparent 50%))}
+ #velora-app .vc-services{display:block;overflow:visible}
+ #velora-app .vc-service{grid-template-columns:38px 1fr;gap:12px 17px;padding:26px 35px 26px 0;min-height:0}
+ #velora-app .vc-service-top{grid-row:1;gap:0;flex-direction:column}
+ #velora-app .vc-service-icon{display:none}
+ #velora-app .vc-service h3{grid-row:1;font-size:25px}
+ #velora-app .vc-service p,#velora-app .vc-service small{grid-column:2;margin:0}
+ #velora-app .vc-service>button{top:24px}
+ #velora-app .vc-project:nth-child(even){margin-top:0}
+ #velora-app .vc-projects{gap:34px 20px}
+ #velora-app .vc-studio-chapters article{border:0;border-top:1px solid var(--line);padding:30px 0}
+ #velora-app #process-list article{padding:20px 0 30px}
+ #velora-app .vc-article{grid-template-columns:105px 1fr;gap:0 20px}
+ #velora-app .vc-article-art{height:115px}
+ #velora-app .vc-article h3 a{font-size:21px}
+ #velora-app .vc-article-meta{font-size:7px;gap:10px}
+}
+@media(prefers-reduced-motion:reduce){#velora-app .vc-project-art img,#velora-app .vc-article-art img{transition:none}}
+
+/* Responsive studio story, layered work, sequential process, footer fixes. */
+#velora-app .vc-projects{display:block;isolation:isolate}
+#velora-app .vc-project,#velora-app .vc-project:nth-child(even){position:sticky;top:calc(110px + var(--project-i)*8px);margin:0 0 55px;background:var(--bg);border-radius:18px;overflow:hidden;box-shadow:0 -15px 45px #0f172a18}
+#velora-app .vc-project-art{aspect-ratio:1.9;min-height:480px;border-radius:0}
+#velora-app .vc-project-art:after{content:'';position:absolute;inset:0;background:linear-gradient(transparent 30%,#0f172acc);pointer-events:none}
+#velora-app .vc-project-index{position:absolute;top:25px;right:30px;z-index:2;font-size:70px;letter-spacing:-5px;color:white;pointer-events:none}
+#velora-app .vc-project-caption{position:absolute;left:35px;right:100px;bottom:35px;z-index:2;color:white;display:block;pointer-events:none}
+#velora-app .vc-project-caption h3{font-size:clamp(30px,4vw,54px);line-height:1.1}
+#velora-app .vc-project-caption>span{display:block;color:#e2e8f0;margin-top:15px;font-size:12px}
+#velora-app .vc-project-arrow{width:55px;height:55px;bottom:30px;right:25px}
+#velora-app .vc-metrics{padding:65px 0;border-bottom:1px solid var(--line)}
+#velora-app .vc-metrics-line{display:grid;grid-template-columns:repeat(3,1fr);gap:30px}
+#velora-app .vc-metrics-line strong{font-size:clamp(48px,8vw,100px);letter-spacing:-4px;color:var(--purple);font-variant-numeric:tabular-nums}
+#velora-app .vc-metrics-line p{font-size:13px;color:var(--muted)}
+#velora-app .vc-preview-note{font-size:10px;color:var(--muted);margin:20px 0}
+#velora-app #process-list article{transition:opacity .7s,transform .7s}
+#velora-app #process-list .vc-step-pending{opacity:.1;transform:translateY(35px)}
+#velora-app #process-list .vc-step-shown{opacity:1;transform:none}
+#velora-app #client-reviews{display:grid;grid-template-columns:1fr 1.5fr;gap:70px;text-align:left;padding-block:75px;border-top:1px solid var(--line)}
+#velora-app #client-reviews .vc-eyebrow{justify-content:flex-start}
+#velora-app #review-copy blockquote{font-family:Georgia,serif;font-size:clamp(27px,3.5vw,42px);line-height:1.4;margin:0 0 25px}
+#velora-app #review-copy p{font-size:13px;color:var(--muted)}
+#velora-app .vc-review-controls{justify-content:space-between;border-top:1px solid var(--line);padding-top:20px}
+#velora-app .vc-footer-grid>div:last-child{display:block;grid-column:auto}
+#velora-app .vc-footer-grid>div:last-child p{font-size:13px;line-height:1.8;color:var(--muted);max-width:280px}
+#velora-app #footer-enquiry{display:grid;gap:12px}
+#velora-app #footer-enquiry label{font-size:12px;color:var(--muted)}
+#velora-app #footer-enquiry input,#velora-app #footer-enquiry textarea{width:100%;min-width:0;padding:14px;border:1px solid var(--line);border-radius:10px;background:var(--bg);color:var(--text);font:inherit;resize:vertical}
+#velora-app #footer-enquiry button{justify-self:start}
+#velora-app #footer-status{white-space:pre-wrap;overflow-wrap:anywhere;font-size:11px}
+#velora-app .vc-footer-bottom{flex-wrap:wrap;gap:22px}
+#velora-app .vc-footer-bottom>a:not(.vc-back-top){width:auto;height:auto;background:none;border-radius:0;font-size:12px;color:var(--muted);white-space:nowrap}
+#velora-app .vc-footer-bottom>.vc-back-top{display:flex;gap:12px;width:auto;height:auto;background:none;color:var(--text);font-size:11px;white-space:nowrap}
+#velora-app .vc-back-top i{width:48px;height:48px;display:grid;place-items:center;border-radius:50%;background:var(--brand-gradient);color:white;font-style:normal;font-size:26px;transition:transform .3s}
+#velora-app .vc-back-top:hover i{transform:translateY(-5px)}
+@media(max-width:1050px){#velora-app .vc-footer-grid{grid-template-columns:1fr 1fr;gap:35px}#velora-app .vc-footer-brand{grid-column:auto}}
+@media(max-width:760px){
+#velora-app .vc-project,#velora-app .vc-project:nth-child(even){top:calc(92px + var(--project-i)*5px);margin-bottom:35px}
+#velora-app .vc-project-art{aspect-ratio:.9;min-height:400px}
+#velora-app .vc-project-index{font-size:50px;right:22px}
+#velora-app .vc-project-caption{left:22px;bottom:30px;right:75px}
+#velora-app .vc-project-caption h3{font-size:30px}
+#velora-app .vc-project-arrow{width:42px;height:42px;right:18px}
+#velora-app .vc-studio-layout{display:block}
+#velora-app .vc-studio-pin{position:sticky;top:85px;z-index:3;background:var(--soft);padding:15px 0;box-shadow:0 18px 18px var(--soft)}
+#velora-app .vc-studio-pin h2{font-size:28px}
+#velora-app .vc-studio-pin .vc-eyebrow{margin-bottom:10px;font-size:8px}
+#velora-app .vc-studio-orbit{height:140px;margin:15px 0 0}
+#velora-app .vc-studio-pin>.vc-text-link{display:none}
+#velora-app .vc-studio-chapters article{min-height:330px;padding:40px 0}
+#velora-app .vc-studio-chapters .vc-chapter-active{border-color:var(--purple)}
+#velora-app .vc-studio-chapters .vc-chapter-active h3{color:var(--purple)}
+#velora-app .vc-metrics-line{gap:12px}
+#velora-app .vc-metrics-line strong{font-size:44px;letter-spacing:-2px}
+#velora-app .vc-metrics-line p{font-size:10px}
+#velora-app #process-list{padding-left:25px;border-left:1px solid var(--purple)}
+#velora-app #client-reviews{grid-template-columns:1fr;gap:35px}
+#velora-app .vc-footer-brand,#velora-app .vc-footer-grid>div:last-child{grid-column:1/-1}
+#velora-app .vc-footer-bottom>span{flex-basis:100%}
+}
+@media(prefers-reduced-motion:reduce){#velora-app .vc-project{position:relative;top:auto!important}#velora-app .vc-studio-pin{position:relative;top:auto}#velora-app #process-list .vc-step-pending{opacity:1;transform:none}}
+
+/* Mobile background story, top-right corner navigation, floating return. */
+#velora-app .vc-menu{rotate:0deg}
+#velora-app .vc-footer-bottom>.vc-back-top{position:fixed;right:24px;bottom:max(24px,env(safe-area-inset-bottom));z-index:85;width:52px;height:52px;opacity:0;visibility:hidden;translate:0 15px;transition:opacity .25s,translate .25s,visibility .25s;filter:drop-shadow(0 5px 14px #0f172a44)}
+#velora-app .vc-footer-bottom>.vc-back-top.vc-up-visible{opacity:1;visibility:visible;translate:0}
+#velora-app .vc-back-top>span{display:none}
+#velora-app .vc-back-top i{width:52px;height:52px;border:1px solid #ffffff66}
+#velora-app.vc-menu-open .vc-back-top{display:none}
+#velora-app .vc-footer-bottom{padding-right:75px}
+#velora-app .vc-review-invitation{border-left:1px solid var(--line);padding-left:40px}
+#velora-app .vc-review-invitation>p{font-size:13px;color:var(--muted);margin-bottom:18px}
+#velora-app .vc-review-invitation h3{font-size:clamp(26px,3vw,38px);line-height:1.3;margin-bottom:22px}
+#velora-app .vc-review-invitation .vc-text-link{background:none;color:var(--text);border:0;border-bottom:1px solid var(--line)}
+@media(max-width:900px){
+#velora-app #navigation{inset:82px 12px 12px;max-height:calc(100dvh - 94px);border-radius:0 0 0 clamp(65px,15vw,135px);clip-path:circle(0% at 100% 0%);transform-origin:100% 0%;background-image:radial-gradient(circle at 100% 0%,#6366f138,transparent 75%);padding-bottom:max(45px,env(safe-area-inset-bottom))}
+#velora-app #navigation.vc-is-open{clip-path:circle(150% at 100% 0%)}
+}
+@media(max-width:760px){
+#velora-app .vc-studio-layout{position:relative;isolation:isolate;padding:28px 24px;border-radius:22px;overflow:clip;background:var(--soft)}
+#velora-app .vc-studio-layout:before{content:'';position:absolute;inset:0;z-index:-2;background:url('../../assets/images/workspace.png') center/cover no-repeat}
+#velora-app .vc-studio-layout:after{content:'';position:absolute;inset:0;z-index:-1;background:linear-gradient(110deg,color-mix(in srgb,var(--soft),transparent 5%),color-mix(in srgb,var(--soft),transparent 18%))}
+#velora-app .vc-studio-pin{position:relative;top:auto;background:none;box-shadow:none;padding:0 0 12px}
+#velora-app .vc-studio-orbit{display:none}
+#velora-app .vc-studio-chapters article{min-height:300px;padding:35px 0;background:none}
+#velora-app .vc-studio-chapters p{color:var(--text)}
+#velora-app .vc-studio-chapters .vc-chapter-active{border-color:var(--pink)}
+#velora-app .vc-studio-chapters .vc-chapter-active h3{color:var(--text)}
+#velora-app .vc-review-invitation{border-left:0;border-top:1px solid var(--line);padding:25px 0 0}
+#velora-app .vc-footer-bottom>.vc-back-top{right:18px;bottom:max(18px,env(safe-area-inset-bottom))}
+}
+@media(prefers-reduced-motion:reduce){#velora-app .vc-menu{rotate:0deg!important}#velora-app .vc-footer-bottom>.vc-back-top{transition:none}#velora-app #navigation{transition:none}}
+
+/* Manual quarter-circle navigation and horizontal laptop portfolio. */
+#velora-app .vc-wheel-controls{display:none}
+@media(max-width:900px){
+ #velora-app #navigation{inset:74px 12px auto auto;width:clamp(210px,50vw,240px);height:clamp(210px,50vw,240px);max-height:none;padding:0;display:block;overflow:hidden;border-radius:0 0 0 100%;clip-path:circle(0 at 100% 0);touch-action:none;}
+ #velora-app #navigation.vc-is-open{clip-path:circle(100% at 100% 0)}
+ #velora-app #navigation::before,#velora-app #navigation::after{display:none}
+ #velora-app #navigation>.vc-menu-caption,#velora-app #navigation>.vc-menu-footer{display:none}
+ #velora-app #navigation>a,#velora-app #navigation.vc-is-open>a{position:absolute;left:var(--wheel-x);top:var(--wheel-y);width:85px;max-width:40%;padding:12px 2px;border:0;display:block;text-align:center;font-size:14px;letter-spacing:-.3px;line-height:1.2;translate:-50% -50%;opacity:var(--wheel-opacity,0);transition:opacity .15s;transition-delay:0s;}
+ #velora-app #navigation>a::after{display:none}
+ #velora-app #navigation>a:focus-visible{outline:2px solid var(--accent);border-radius:20px}
+ #velora-app .vc-wheel-controls{display:flex;align-items:center;justify-content:center;gap:4px;position:absolute;right:8px;top:12px;width:90px;flex-wrap:wrap;pointer-events:none;}
+ #velora-app .vc-wheel-controls p{width:100%;font-size:8px;letter-spacing:1px;text-align:center;margin:0 0 7px;color:var(--muted)}
+ #velora-app .vc-wheel-controls button{width:38px;height:38px;border-radius:50%;border:1px solid var(--line);background:var(--bg);color:var(--text);font-size:23px;cursor:pointer}
+ #velora-app .vc-wheel-controls span{font-size:11px;color:var(--muted)}
+}
+@media(min-width:901px){
+ #velora-app .vc-projects{display:flex;gap:24px;overflow-x:auto;scroll-snap-type:x mandatory;overscroll-behavior-x:contain;padding-bottom:24px;scrollbar-width:thin;scrollbar-color:var(--accent) var(--soft);}
+ #velora-app .vc-project,#velora-app .vc-project:nth-child(even){position:relative;top:auto;flex:0 0 calc(50% - 12px);min-width:0;margin:0;scroll-snap-align:start;box-shadow:none;}
+ #velora-app .vc-project-art{aspect-ratio:1.05;min-height:360px;}
+ #velora-app .vc-project-caption{left:24px;right:70px;bottom:28px;}
+ #velora-app .vc-project-caption h3{font-size:clamp(24px,2.5vw,38px)}
+ #velora-app .vc-project-index{font-size:50px;right:22px}
+ #velora-app .vc-project-arrow{width:42px;height:42px;right:18px}
+}
+
+/* Editorial motion and finishing details. */
+.vc-loader{position:fixed;inset:0;z-index:9999;display:grid;place-items:center;background:#0f172a;color:#fff;pointer-events:none;transition:opacity .5s,visibility .5s}.vc-loader>div{text-align:center;width:170px}.vc-loader strong{font-size:80px;letter-spacing:-12px}.vc-loader strong span{display:inline-block;font-size:40px;color:#6366f1;animation:vc-loader-spin 1.6s ease infinite}.vc-loader p{font-size:10px;letter-spacing:4px;margin:20px 0}.vc-loader i{display:block;height:2px;background:linear-gradient(90deg,#6366f1,#ec4899);transform-origin:left;animation:vc-loading 1s ease infinite}.vc-loader-done{opacity:0;visibility:hidden}@keyframes vc-loader-spin{to{transform:rotate(180deg)}}@keyframes vc-loading{from{transform:scaleX(.1)}to{transform:scaleX(1)}}
+#velora-app .vc-studio-strip{gap:0;animation:vc-marquee 26s linear infinite;transform-origin:center;background:linear-gradient(110deg,#6366f112,#ec489912);border-color:var(--accent);padding-block:24px}
+#velora-app .vc-studio-strip span{display:flex;align-items:center;gap:28px;padding-right:28px}#velora-app .vc-studio-strip b{font-weight:600;background:var(--brand-gradient);background-clip:text;color:transparent}#velora-app .vc-studio-strip i{display:inline-block;font-style:normal;font-weight:400;color:var(--accent);animation:vc-loader-spin 8s linear infinite}#velora-app .vc-studio-strip:hover{animation-play-state:paused}
+#velora-app .vc-process-scroll{height:340vh;position:relative}
+#velora-app .vc-process-scroll>.vc-section{position:sticky;top:90px;padding-block:30px;height:calc(100vh - 100px);height:calc(100svh - 100px);display:flex;flex-direction:column;justify-content:center;overflow:hidden}
+#velora-app .vc-process-scroll .vc-section-heading{margin-bottom:15px;flex-shrink:0}
+#velora-app .vc-process-scroll #process-list{position:relative;display:block;flex:1;min-height:260px;max-height:420px;border:0;padding:0;overflow:hidden}
+#velora-app .vc-process-scroll #process-list article{position:absolute;inset:0;padding:32px 0 65px;display:grid;grid-template-columns:.6fr 1fr;align-content:center;gap:16px 35px;transition:none;border:0;will-change:transform,opacity}
+#velora-app .vc-process-scroll .vc-step-number{grid-row:span 2;font-size:clamp(100px,15vw,210px)!important;line-height:1;margin:0!important;letter-spacing:-8px}#velora-app .vc-process-scroll .vc-step-number>span{display:none}
+#velora-app .vc-process-scroll #process-list h3{font-size:clamp(32px,5vw,64px);margin:0}#velora-app .vc-process-scroll #process-list p{font-size:16px;max-width:440px;margin:0}
+#velora-app .vc-process-progress{position:absolute;bottom:5px;left:0;right:0;display:flex;gap:12px}#velora-app .vc-process-progress span{flex:1;border-top:2px solid var(--line);padding-top:12px;color:var(--muted);font-size:12px}#velora-app .vc-process-progress .vc-current{border-color:var(--accent);color:var(--accent)}
+#velora-app #client-reviews.vc-review-letter{position:relative;isolation:isolate;margin-block:70px;padding:60px 45px 50px;border:1px solid var(--line);border-radius:0 38px 0 38px;background:linear-gradient(125deg,var(--soft),var(--bg));gap:40px;overflow:hidden;box-shadow:12px 12px 0 color-mix(in srgb,var(--accent),transparent 92%)}
+#velora-app .vc-review-mark{position:absolute;right:25px;top:-45px;font:240px Georgia,serif;color:var(--accent);opacity:.12;z-index:-1}#velora-app .vc-review-invitation{border-left:1px solid var(--line);padding-left:35px}#velora-app .vc-review-invitation h3{font:italic 32px/1.3 Georgia,serif;letter-spacing:-1px}
+#velora-app .vc-newsletter{display:block;border:0;border-radius:20px;background:color-mix(in srgb,var(--bg),var(--text) 5%);padding:32px;margin-bottom:35px}#velora-app .vc-newsletter h3{font-size:20px;margin-bottom:9px}#velora-app .vc-newsletter p{font-size:14px;line-height:1.6}#velora-app #newsletter-form{margin-top:24px}#velora-app #newsletter-form>div{padding:0;background:none;border:0;gap:12px}#velora-app #newsletter-email{border:1px solid var(--line);background:color-mix(in srgb,var(--bg),var(--text) 12%);font-size:14px;padding:15px 20px}#velora-app #newsletter-form .vc-button{min-width:140px;justify-content:center}#velora-app #newsletter-status:empty{display:none}.vc-sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
+#velora-app .vc-contact-details a,#velora-app .vc-contact-details p{display:flex!important;align-items:center;gap:10px;margin:14px 0!important;font-size:13px!important}#velora-app .vc-contact-details span{font-size:18px;color:var(--muted)}
+#velora-app .vc-footer-bottom>.vc-back-top{width:54px;height:54px;padding:3px;border-radius:50%;background:conic-gradient(var(--accent) var(--page-progress,0deg),var(--line) 0);box-shadow:0 8px 30px #0002;backdrop-filter:blur(12px)}#velora-app .vc-back-top i{width:48px;height:48px;background:var(--bg);border:0;color:var(--text);box-shadow:none;font-size:22px}#velora-app .vc-back-top:hover i{transform:none;background:var(--accent);color:#fff}#velora-app .vc-back-top:focus-visible{outline:3px solid var(--accent);outline-offset:5px}
+@media(max-width:760px){#velora-app .vc-studio-strip{font-size:27px;padding-block:20px}#velora-app .vc-studio-strip span{gap:20px;padding-right:20px}#velora-app .vc-process-scroll>.vc-section{top:80px;height:calc(100svh - 90px);padding-block:25px}#velora-app .vc-process-scroll .vc-section-heading{display:block}#velora-app .vc-process-scroll .vc-section-heading>.vc-text-link{display:none}#velora-app .vc-process-scroll #process-list article{grid-template-columns:1fr;gap:14px;padding:15px 0 55px}#velora-app .vc-process-scroll .vc-step-number{grid-row:auto;font-size:95px!important;letter-spacing:-5px}#velora-app .vc-process-scroll #process-list h3{font-size:32px}#velora-app .vc-process-scroll #process-list p{font-size:14px;max-width:95%}#velora-app #client-reviews.vc-review-letter{grid-template-columns:1fr;padding:40px 24px;gap:28px}#velora-app .vc-review-invitation{padding:25px 0 0;border-left:0;border-top:1px solid var(--line)}#velora-app .vc-newsletter{padding:25px 20px}#velora-app #newsletter-form>div{flex-wrap:wrap}#velora-app #newsletter-form .vc-button{width:100%}#velora-app #newsletter-email{flex:1 0 100%}}
+@media(prefers-reduced-motion:reduce){.vc-loader{display:none}#velora-app .vc-studio-strip,#velora-app .vc-studio-strip i{animation:none}}
+
+/* Service index: generous type, numbered tabs, and a restrained colour wash. */
+#velora-app #services .vc-section-heading{align-items:end;padding-bottom:20px}
+#velora-app #services .vc-section-heading h2{font-size:clamp(34px,4.2vw,58px);letter-spacing:-2.5px;line-height:1.05}
+#velora-app #service-list{counter-reset:service}
+#velora-app .vc-service{position:relative;padding:34px 70px 34px 22px;grid-template-columns:90px 1fr 1.1fr;gap:8px 28px;isolation:isolate;transition:padding .35s,background .35s}
+#velora-app .vc-service::before{content:'';position:absolute;inset:0;z-index:-1;background:linear-gradient(110deg,color-mix(in srgb,var(--accent),transparent 90%),transparent 80%);opacity:0;transition:opacity .35s}
+#velora-app .vc-service:hover::before,#velora-app .vc-service:focus-within::before{opacity:1}
+#velora-app .vc-service-top{flex-direction:column;align-items:flex-start;gap:12px}
+#velora-app .vc-service-icon{font-size:34px;transition:transform .55s}
+#velora-app .vc-service:hover .vc-service-icon{transform:rotate(90deg)}
+#velora-app .vc-service-top>span:last-child{font-size:10px;letter-spacing:2px;color:var(--muted)}
+#velora-app .vc-service h3{font-size:clamp(24px,2.8vw,38px);letter-spacing:-1.3px;line-height:1.1;margin:0}
+#velora-app .vc-service small{font-size:10px;letter-spacing:.3px;color:var(--accent)}
+#velora-app .vc-service>button{right:14px;top:calc(50% - 22px);width:44px;height:44px;border:1px solid var(--line);border-radius:50%;background:var(--bg);font-size:20px;color:var(--text)}
+#velora-app .vc-service:hover>button,#velora-app .vc-service:focus-within>button{background:var(--accent);color:white;transform:rotate(45deg)}
+/* Desktop work stays in the page: two columns, two rows, no sideways scrolling. */
+@media(min-width:901px){
+ #velora-app .vc-projects{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:32px 24px;overflow:visible;scroll-snap-type:none;padding:0}
+ #velora-app .vc-project,#velora-app .vc-project:nth-child(even){margin:0;top:auto;position:relative;min-width:0;flex:none;border-radius:16px;transition:transform .5s cubic-bezier(.2,.8,.2,1)}
+ #velora-app .vc-project:hover{transform:translateY(-6px)}
+ #velora-app .vc-project-art{aspect-ratio:1.15;min-height:340px}
+ #velora-app .vc-project-index{font-size:35px;letter-spacing:-1px;border-bottom:1px solid #ffffff70;padding-bottom:8px}
+ #velora-app .vc-project-caption h3{font-size:clamp(23px,2.3vw,34px)}
+}
+/* Four named milestones, with a clear active phase and discreet connecting line. */
+#velora-app .vc-process-progress{gap:0;bottom:0;isolation:isolate}
+#velora-app .vc-process-progress>span{position:relative;display:grid;grid-template-columns:30px 1fr;align-items:center;gap:10px;border:0;padding:18px 10px 8px 0;color:var(--muted)}
+#velora-app .vc-process-progress>span::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:var(--line)}
+#velora-app .vc-process-progress i{display:grid;place-items:center;width:28px;height:28px;font-style:normal;font-size:10px;border:1px solid var(--line);border-radius:50%;background:var(--soft)}
+#velora-app .vc-process-progress b{font-size:12px;font-weight:500;letter-spacing:.1px}
+#velora-app .vc-process-progress em{display:none}
+#velora-app .vc-process-progress>.vc-current{color:var(--text)}
+#velora-app .vc-process-progress>.vc-current::before{height:2px;background:var(--brand-gradient)}
+#velora-app .vc-process-progress>.vc-current i{color:white;background:var(--accent);border-color:var(--accent);box-shadow:0 0 0 5px color-mix(in srgb,var(--accent),transparent 90%)}
+#velora-app .vc-process-scroll .vc-step-number{font-family:inherit;font-style:normal;font-weight:500;letter-spacing:-10px;color:color-mix(in srgb,var(--accent),transparent 15%)}
+/* A collection of editorial client notes, rather than a single testimonial. */
+#velora-app #client-reviews.vc-review-collection{display:block;padding-block:75px;border:0;text-align:left}
+#velora-app .vc-review-heading{display:flex;justify-content:space-between;align-items:end;gap:35px;margin-bottom:35px}
+#velora-app .vc-review-heading>p{max-width:300px;font-size:13px;line-height:1.7;color:var(--muted)}
+#velora-app .vc-review-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+#velora-app .vc-client-note{position:relative;display:flex;flex-direction:column;min-height:290px;padding:26px;border:1px solid var(--line);border-radius:0 24px 0 0;background:var(--soft);transition:transform .35s,border-color .35s}
+#velora-app .vc-client-note:nth-child(3n + 2){background:color-mix(in srgb,var(--accent),var(--bg) 94%)}
+#velora-app .vc-client-note:nth-child(3n){background:color-mix(in srgb,#ec4899,var(--bg) 95%)}
+#velora-app .vc-client-note:hover{transform:translateY(-4px);border-color:var(--accent)}
+#velora-app .vc-note-top{display:flex;justify-content:space-between;align-items:center;font-size:8px;letter-spacing:1.4px;color:var(--muted)}
+#velora-app .vc-note-top i{font-size:22px;font-style:normal;color:var(--accent)}
+#velora-app .vc-client-note blockquote{font:italic 26px/1.4 Georgia,serif;letter-spacing:-.6px;margin:28px 0 35px;color:var(--text)}
+#velora-app .vc-client-note footer{display:flex;gap:12px;align-items:center;margin-top:auto;border-top:1px solid var(--line);padding-top:18px}
+#velora-app .vc-client-monogram{width:36px;height:36px;display:grid;place-items:center;flex-shrink:0;border:1px solid var(--line);border-radius:50%;font-size:11px;color:var(--accent)}
+#velora-app .vc-client-note strong{font-size:12px;font-weight:600}#velora-app .vc-client-note footer p{font-size:10px;color:var(--muted);margin:4px 0 0;line-height:1.5}
+@media(max-width:1050px){#velora-app .vc-review-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:760px){
+ #velora-app .vc-service{grid-template-columns:38px 1fr;padding:26px 44px 26px 0;gap:12px 16px}
+ #velora-app .vc-service-top{grid-row:1/4}#velora-app .vc-service h3{grid-row:auto;font-size:25px}#velora-app .vc-service p,#velora-app .vc-service small{grid-column:2}#velora-app .vc-service>button{right:0;width:32px;height:32px;top:26px;font-size:16px}#velora-app .vc-service-icon{display:flex!important;font-size:26px;width:30px}
+ #velora-app .vc-process-progress>span{grid-template-columns:1fr;gap:9px;justify-items:center;padding:14px 0 4px}#velora-app .vc-process-progress b{font-size:10px}#velora-app .vc-process-scroll .vc-step-number{letter-spacing:-6px}
+ #velora-app .vc-review-heading{display:block}#velora-app .vc-review-heading>p{margin-top:20px}#velora-app .vc-review-grid{grid-template-columns:1fr;gap:16px}#velora-app .vc-client-note{min-height:250px;padding:24px}#velora-app .vc-client-note blockquote{font-size:27px}
+}
+@media(prefers-reduced-motion:reduce){#velora-app .vc-service,#velora-app .vc-service-icon,#velora-app .vc-project,#velora-app .vc-client-note{transition:none}#velora-app .vc-service:hover .vc-service-icon,#velora-app .vc-project:hover,#velora-app .vc-client-note:hover{transform:none}}
+
+/* Quiet process rail: colour communicates the active phase without extra labels. */
+#velora-app .vc-process-progress{gap:7px;bottom:12px}
+#velora-app .vc-process-progress>span{display:block;height:3px;padding:0;border:0;border-radius:10px;overflow:hidden;background:var(--line)}
+#velora-app .vc-process-progress>span::before{display:none}
+#velora-app .vc-process-progress>span>*{display:none}
+#velora-app .vc-process-progress>.vc-current{background:var(--brand-gradient);box-shadow:0 0 12px color-mix(in srgb,var(--accent),transparent 80%)}
+/* One continuous row, moved only by the visitor. */
+#velora-app .vc-review-grid.vc-review-loop{display:flex;gap:20px;overflow-x:auto;overflow-y:hidden;scrollbar-width:none;overscroll-behavior-x:contain;touch-action:pan-x pan-y;cursor:grab;padding:5px 0 12px;}
+#velora-app .vc-review-loop::-webkit-scrollbar{display:none}
+#velora-app .vc-review-loop .vc-client-note{flex:0 0 calc((100% - 40px)/3);min-width:0;user-select:none;}
+#velora-app .vc-review-loop .vc-client-note:hover{transform:none}
+#velora-app .vc-review-loop.vc-dragging{cursor:grabbing}
+#velora-app .vc-review-loop:focus-visible{outline:2px solid var(--accent);outline-offset:6px;border-radius:8px}
+#velora-app .vc-review-hint{display:flex;justify-content:space-between;margin-top:16px;font-size:9px;letter-spacing:1.5px;color:var(--muted)}
+@media(max-width:1050px){#velora-app .vc-review-loop .vc-client-note{flex-basis:calc((100% - 20px)/2)}}
+@media(max-width:760px){#velora-app .vc-review-loop .vc-client-note{flex-basis:88%}}
+.vc-cursor-ring,.vc-cursor-dot{position:fixed;top:0;left:0;pointer-events:none;z-index:10000;border-radius:50%;opacity:0;will-change:transform;transition:opacity .2s,width .25s,height .25s,background .25s;}
+.vc-cursor-ring{width:32px;height:32px;border:1px solid #8b7cf6;background:transparent;}
+.vc-cursor-dot{width:5px;height:5px;background:#ec4899;}
+@media(hover:hover) and (pointer:fine) and (prefers-reduced-motion:no-preference){.vc-cursor-active .vc-cursor-ring,.vc-cursor-active .vc-cursor-dot{opacity:1}.vc-cursor-active,.vc-cursor-active a,.vc-cursor-active button{cursor:none!important}.vc-cursor-ring.vc-cursor-hover{width:46px;height:46px;background:#6366f114;}}
+@media(prefers-reduced-motion:reduce),(pointer:coarse){.vc-cursor-ring,.vc-cursor-dot{display:none}}
+
+/* Layered review deck, manually swiped with depth and a soft lift. */
+#velora-app .vc-review-grid.vc-review-deck{display:block;position:relative;perspective:1100px;max-width:720px;margin:20px auto 0;touch-action:pan-y;cursor:grab;isolation:isolate;clip-path:inset(-35px -22px -20px);}
+#velora-app .vc-review-deck .vc-client-note{position:absolute;left:4%;top:10px;width:92%;min-height:320px;padding:38px;border-radius:22px;background:var(--soft);border:1px solid var(--line);box-shadow:0 18px 48px #0002;transform-origin:50% 70%;transition:transform .5s cubic-bezier(.2,.8,.2,1),opacity .3s;user-select:none;will-change:transform;}
+#velora-app .vc-review-deck .vc-client-note:nth-child(3n+2){background:color-mix(in srgb,var(--accent),var(--bg) 94%)}
+#velora-app .vc-review-deck .vc-client-note:nth-child(3n){background:color-mix(in srgb,#ec4899,var(--bg) 95%)}
+#velora-app .vc-review-deck .vc-client-note blockquote{font-size:clamp(28px,3.2vw,40px);line-height:1.35;margin-block:32px 40px;}
+#velora-app .vc-review-deck.vc-dragging{cursor:grabbing}
+#velora-app .vc-review-deck.vc-dragging .vc-client-note{transition:none}
+#velora-app .vc-review-deck:focus-visible{outline:2px solid var(--accent);outline-offset:7px;border-radius:22px}
+#velora-app .vc-review-deck+.vc-review-hint{max-width:660px;margin:18px auto 0}
+@media(max-width:760px){#velora-app .vc-review-deck .vc-client-note{padding:25px;min-height:310px}#velora-app .vc-review-deck .vc-client-note blockquote{font-size:29px}}
+.vc-cursor-ring{width:22px;height:22px;border-width:2px}.vc-cursor-dot{width:6px;height:6px}
+@media(hover:hover) and (pointer:fine) and (prefers-reduced-motion:no-preference){.vc-cursor-active{cursor:auto!important}.vc-cursor-active a,.vc-cursor-active button{cursor:pointer!important}.vc-cursor-ring.vc-cursor-hover{width:28px;height:28px}}
+@media(prefers-reduced-motion:reduce){#velora-app .vc-review-deck .vc-client-note{transition:none}}
+
+/* Numeric page preparation progress, matching the studio palette. */
+.vc-loader-count{display:flex;align-items:baseline;justify-content:center;gap:5px;margin:28px 0 22px;font-variant-numeric:tabular-nums}.vc-loader-count span{font-size:56px;font-weight:500;letter-spacing:-3px;line-height:1}.vc-loader-count small{font-size:16px;color:#94a3b8}.vc-loader i{animation:none;transform:scaleX(0)}

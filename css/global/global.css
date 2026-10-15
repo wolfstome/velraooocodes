@@ -1,0 +1,77 @@
+/* css/main.css */
+/* All selectors are scoped to this page. Colors are the only theme differences. */
+#velora-app { margin:0; background:var(--bg); color:var(--text); font-size:15px; line-height:1.65; -webkit-font-smoothing:antialiased; }
+#velora-app *, #velora-app *::before, #velora-app *::after { box-sizing:border-box; }
+#velora-app a { color:inherit; text-decoration:none; }
+#velora-app button, #velora-app input, #velora-app textarea { font:inherit; }
+#velora-app button { cursor:pointer; }
+#velora-app button, #velora-app a { -webkit-tap-highlight-color:transparent; }
+#velora-app button:focus-visible, #velora-app a:focus-visible, #velora-app input:focus-visible, #velora-app textarea:focus-visible, #velora-app [tabindex]:focus-visible { outline:2px solid var(--accent); outline-offset:5px; }
+#velora-app h1, #velora-app h2, #velora-app h3, #velora-app p { margin:0; }
+#velora-app h1, #velora-app h2, #velora-app h3 { line-height:1.12; font-weight:500; }
+#velora-app .vc-wrap { width:min(1200px,calc(100% - 100px)); margin-inline:auto; }
+#velora-app .vc-header { position:relative; z-index:10; border-bottom:1px solid var(--line); }
+#velora-app .vc-nav { display:flex; align-items:center; justify-content:space-between; height:100px; gap:30px; }
+#velora-app .vc-brand { display:inline-flex; align-items:center; letter-spacing:-1.5px; font-size:27px; font-weight:700; white-space:nowrap; }
+#velora-app .vc-brand-code { font-weight:400; margin-left:5px; }
+#velora-app .vc-brand-dot { align-self:flex-start; font-size:11px; margin:6px 0 0 3px; }
+#velora-app .vc-mark { position:relative; font-size:42px; font-weight:800; line-height:1; margin-right:13px; letter-spacing:-5px; transform:rotate(-10deg); }
+#velora-app .vc-mark span { color:var(--purple); font-size:21px; position:relative; top:-15px; letter-spacing:0; }
+#velora-app #navigation { display:flex; gap:32px; font-size:13px; }
+#velora-app #navigation a:hover { color:var(--accent); }
+#velora-app .vc-nav-actions, #velora-app .vc-actions { display:flex; align-items:center; gap:24px; }
+#velora-app .vc-theme { display:grid; place-items:center; border:1px solid var(--line); background:transparent; color:var(--text); width:39px; height:39px; border-radius:50%; font-size:21px; }
+#velora-app .vc-button { display:inline-flex; align-items:center; justify-content:space-between; gap:30px; background:var(--text); color:var(--bg); padding:17px 25px; border:1px solid transparent; border-radius:50px; font-size:13px; font-weight:500; transition:transform .2s,background .2s; line-height:1.2; }
+#velora-app .vc-button:hover { transform:translateY(-3px); background:var(--accent); color:var(--surface); }
+#velora-app .vc-button span { font-size:20px; }
+#velora-app .vc-button-small { padding:12px 20px; gap:25px; }
+#velora-app .vc-menu { display:none; }
+#velora-app h1 { font-size:clamp(48px,5.5vw,76px); line-height:1.065; letter-spacing:-4px; position:relative; }
+#velora-app .vc-text-link { display:inline-flex; gap:20px; align-items:center; font-size:12px; border-bottom:1px solid var(--line); padding-block:9px; }
+#velora-app .vc-text-link span { font-size:19px; }
+#velora-app .vc-section { padding-block:95px; scroll-margin-top:30px; }
+#velora-app .vc-section-heading { display:flex; justify-content:space-between; align-items:flex-end; gap:50px; margin-bottom:42px; }
+#velora-app h2 { font-size:clamp(32px,3.8vw,49px); letter-spacing:-2px; }
+#velora-app .vc-muted { color:var(--muted); }
+#velora-app .vc-section-heading > p { max-width:315px; color:var(--muted); font-size:13px; margin-bottom:4px; }
+#velora-app h3 { font-size:20px; letter-spacing:-.55px; }
+#velora-app .vc-process-band { background:var(--soft); }
+#velora-app .vc-process { display:grid; grid-template-columns:repeat(4,1fr); gap:30px; }
+#velora-app .vc-step-number { display:flex; justify-content:space-between; border-top:1px solid var(--line); padding-top:20px; color:var(--accent); font-size:12px; margin-bottom:27px; }
+#velora-app .vc-step-number span { color:var(--muted); font-size:17px; }
+#velora-app .vc-process p { font-size:12px; color:var(--muted); margin-top:15px; max-width:215px; }
+#velora-app .vc-quote { padding-block:80px; text-align:center; border-bottom:1px solid var(--line); }
+#velora-app .vc-quote-mark { display:block; font-family:Georgia,serif; font-size:84px; line-height:.7; color:var(--purple); }
+#velora-app .vc-quote h2 { font-size:41px; }
+#velora-app .vc-quote-label { font-size:8px; letter-spacing:1.5px; display:block; margin-top:25px; color:var(--muted); }
+#velora-app .vc-button-light { background:#fff; color:#403449; }
+#velora-app .vc-footer { padding-top:60px; }
+#velora-app .vc-footer-top { display:flex; align-items:center; justify-content:space-between; padding-bottom:40px; gap:30px; }
+#velora-app .vc-footer-top > p { font-size:11px; color:var(--muted); margin-right:auto; margin-left:60px; }
+#velora-app .vc-footer-bottom { display:flex; justify-content:space-between; gap:20px; padding-block:22px; border-top:1px solid var(--line); font-size:8px; color:var(--muted); }
+#velora-app .vc-dialog { border:1px solid var(--line); background:var(--surface); color:var(--text); border-radius:20px; padding:45px; width:min(590px,calc(100% - 30px)); max-height:90dvh; box-shadow:0 25px 90px #0003; }
+#velora-app .vc-dialog::backdrop { background:#18132080; backdrop-filter:blur(6px); }
+#velora-app .vc-dialog h2 { font-size:35px; padding-right:15px; }
+#velora-app .vc-dialog-close { position:absolute; top:12px; right:15px; border:0; background:transparent; color:var(--text); font-size:28px; }
+#velora-app .vc-dialog-art { display:grid; place-items:center; border-radius:12px; padding:20px; font-size:80px; margin-top:25px; }
+#velora-app .vc-dialog-art small { font-size:9px; letter-spacing:1px; }
+#velora-app .vc-dialog .vc-dialog-note { font-size:11px!important; }
+#velora-app .vc-skip { position:fixed; top:-100px; left:20px; z-index:100; background:var(--text); color:var(--bg); padding:10px 20px; }
+#velora-app .vc-skip:focus { top:10px; }
+@keyframes vc-marquee { to { transform:translateX(-50%); } }
+@keyframes vc-float { 50% { translate:0 -8px; } }
+@keyframes vc-turn { to { transform:rotate(360deg); } }
+#velora-app .vc-page-intro { padding:70px 0 0; }
+#velora-app .vc-page-intro > p:last-child { max-width:580px; margin-top:20px; color:var(--muted); }
+#velora-app .vc-detail { max-width:780px; margin-inline:auto; padding:70px 0; }
+#velora-app .vc-detail > p { margin:24px 0; color:var(--muted); }
+#velora-app .vc-detail .vc-dialog-art { min-height:330px; }
+#velora-app #navigation a[aria-current="page"] { color:var(--accent); }
+#velora-app .vc-page-heading { font-size:clamp(32px,3.8vw,49px); letter-spacing:-2px; line-height:1.12; }
+
+/* css/fonts.css */
+/* Change typography here; no external font download needed. */
+#velora-app { --font-body:Arial,Helvetica,sans-serif; --font-display:Arial,Helvetica,sans-serif; --font-editorial:Georgia,serif; font-family:var(--font-body); }
+#velora-app h1, #velora-app h2, #velora-app h3 { font-family:var(--font-display); }
+#velora-app .vc-quote-mark, #velora-app .vc-article-art > span, #velora-app .vc-image-frame em, #velora-app .vc-marquee-track span:nth-child(2n) { font-family:var(--font-editorial); }
+

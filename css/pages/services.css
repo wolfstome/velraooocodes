@@ -1,0 +1,11 @@
+/* css/services.css */
+#velora-app .vc-services { display:grid; grid-template-columns:repeat(4,1fr); border:1px solid var(--line); border-radius:16px; overflow:hidden; }
+#velora-app .vc-service { position:relative; padding:28px 25px 60px; transition:background .25s; }
+#velora-app .vc-service + .vc-service { border-left:1px solid var(--line); }
+#velora-app .vc-service:hover { background:var(--surface); }
+#velora-app .vc-service-top { display:flex; align-items:center; justify-content:space-between; color:var(--muted); font-size:10px; margin-bottom:32px; }
+#velora-app .vc-service-icon { display:grid; place-items:center; background:var(--soft); width:46px; height:46px; color:var(--accent); border-radius:12px; font-size:28px; }
+#velora-app .vc-service p { font-size:12px; color:var(--muted); margin-top:16px; }
+#velora-app .vc-service small { display:block; font-size:9px; margin-top:20px; color:var(--muted); }
+#velora-app .vc-service > button { position:absolute; bottom:18px; right:23px; border:0; background:transparent; color:var(--text); font-size:24px; }
+

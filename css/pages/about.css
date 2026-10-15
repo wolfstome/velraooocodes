@@ -1,0 +1,13 @@
+/* css/about.css */
+#velora-app .vc-about-band { background:var(--soft); padding-block:80px; scroll-margin-top:30px; }
+#velora-app .vc-about { display:grid; grid-template-columns:1fr 1fr; gap:100px; align-items:center; }
+#velora-app .vc-about-art { position:relative; }
+#velora-app .vc-placeholder { display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; }
+#velora-app .vc-placeholder-about { background:#dfe4dc; color:#697064; aspect-ratio:1.15; border-radius:14px; }
+#velora-app .vc-placeholder-about > span:nth-child(2) { font-size:31px; line-height:1.2; letter-spacing:-1px; margin:20px 0; }
+#velora-app .vc-placeholder-about small { font-size:8px; letter-spacing:2px; }
+#velora-app .vc-studio-sticker { position:absolute; bottom:24px; right:-30px; padding:22px; width:215px; border-radius:10px; background:var(--surface); box-shadow:var(--shadow); font-size:13px; transform:rotate(-6deg); }
+#velora-app .vc-studio-sticker strong { font-weight:500; }
+#velora-app .vc-studio-sticker span { position:absolute; font-size:28px; right:13px; top:10px; color:var(--purple); }
+#velora-app .vc-values { display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-block:25px; font-size:11px; }
+
